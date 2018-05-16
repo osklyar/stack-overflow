@@ -1,0 +1,12 @@
+.gradle/
+
+build.properties
+META-INF/
+
+build/
+target/
+out/
+bin/
+
+*.iml
+.idea/
