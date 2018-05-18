@@ -5,7 +5,7 @@
 import org.junit.Test;
 
 
-public class TestMethodReference {
+public class TestMethodReference50367747 {
 
 	interface Telling {
 		void tell(String what);
@@ -36,13 +36,13 @@ public class TestMethodReference {
 		telling = (what) -> System.out.println("what: " + what);
 		telling.tell("before hello");
 
-		telling = TestMethodReference::tellSomething;
+		telling = TestMethodReference50367747::tellSomething;
 		telling.tell("hello");
 
 		telling = this::tellMore;
 		telling.tell("hello again");
 
-		telling = this::tellEvenMore;
+		telling = new TestMethodReference50367747()::tellEvenMore;
 		telling.tell("and again");
 	}
 
